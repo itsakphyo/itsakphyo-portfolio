@@ -14,7 +14,7 @@ export default function Projects() {
       title: "Fact Checker — Chrome Extension with AI-Powered Backend",
       description:
         "Built a browser extension with a FastAPI backend that allows users to fact-check selected text or images directly from any webpage. The backend leverages Google Gemini, a large language model (LLM), for real-time claim verification, web search, and OCR-based image analysis. Includes multilingual support via Google Cloud Translate and is containerized with Docker for easy deployment.",
-      techStack: ["JavaScript", "Python", "FastAPI", "Docker", "Google Gemini", "Google Cloud Translate", "Docker"],
+      techStack: ["JavaScript", "Python", "FastAPI", "Docker", "Google Gemini", "Google Cloud Translate", "Google Cloud Platform"],
       links: [
         {
           type: "github",
