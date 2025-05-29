@@ -11,6 +11,20 @@ import Link from "next/link"
 export default function Projects() {
   const projects = [
     {
+      title: "Fact Checker — Chrome Extension with AI-Powered Backend",
+      description:
+        "Built a browser extension with a FastAPI backend that allows users to fact-check selected text or images directly from any webpage. The backend leverages Google Gemini, a large language model (LLM), for real-time claim verification, web search, and OCR-based image analysis. Includes multilingual support via Google Cloud Translate and is containerized with Docker for easy deployment.",
+      techStack: ["JavaScript", "Python", "FastAPI", "Docker", "Google Gemini", "Google Cloud Translate", "Docker"],
+      links: [
+        {
+          type: "github",
+          url: "github.com/itsakphyo/fact-checker-server",
+          icon: <Github className="h-4 w-4 mr-2" />,
+          label: "View Code",
+        },
+      ],
+    },
+    {
       title: 'Text Data Collection Platform (for "guided-back" translation)',
       description:
         "As part of my final year project, I developed a text data collection platform designed for three user roles: Admin, Freelancer, and Data Quality Assurance Member. Each role has specific features and permissions tailored to their responsibilities. Due to the ongoing academic review, the source code and full documentation remain confidential. However, a demo video is available that highlights the platform's main features and shows how each user role interacts with the system.",
@@ -33,20 +47,6 @@ export default function Projects() {
         {
           type: "github",
           url: "https://github.com/itsakphyo/first-rag",
-          icon: <Github className="h-4 w-4 mr-2" />,
-          label: "View Code",
-        },
-      ],
-    },
-    {
-      title: "Thai Visa Assistance Chatbot with RAG",
-      description:
-        "Developed (backend-only) chatbot to assist with visa-related inquiries, using text-to-vector conversion and Retrieval-Augmented Generation (RAG) for accurate document retrieval. The system uses a local LLM with Ollama and ChromaDB vector database to provide fast, reliable responses, offering an efficient tool for visa applicants.",
-      techStack: ["Python", "LangChain", "Ollama", "Hugging Face", "ChromaDB", "OpenAI"],
-      links: [
-        {
-          type: "github",
-          url: "https://github.com/itsakphyo/visa-assistance",
           icon: <Github className="h-4 w-4 mr-2" />,
           label: "View Code",
         },
