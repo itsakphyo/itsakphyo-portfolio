@@ -11,8 +11,8 @@ export default function Skills() {
       skills: ["Python", "TypeScript"],
     },
     {
-      name: "Frameworks & API Development",
-      skills: ["FastAPI", "LangGraph", "OpenAI", "React"],
+      name: "Frameworks & CLoud",
+      skills: ["FastAPI", "LangGraph", "OpenAI", "React", "Google Cloud Platform", "Docker", "PostgreSQL", "ChromaDB"],
     },
     {
       name: "Machine Learning & Deep Learning",
