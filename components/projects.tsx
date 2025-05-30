@@ -5,7 +5,7 @@ import SectionHeading from "./section-heading"
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
-import { Github, Youtube } from "lucide-react"
+import { Github, Youtube, ExternalLink   } from "lucide-react"
 import Link from "next/link"
 
 export default function Projects() {
@@ -17,9 +17,15 @@ export default function Projects() {
       techStack: ["JavaScript", "Python", "FastAPI", "Docker", "Google Gemini", "Google Cloud Translate", "Google Cloud Platform"],
       links: [
         {
+          type: "demo",
+          url: "https://chromewebstore.google.com/detail/fact-checker/fkljeknlglobikhccghfkjdbgoeboiip",
+          icon: <ExternalLink  className="h-4 w-4 mr-2" />,
+          label: "View Extension",
+        },
+        {
           type: "github",
-          url: "github.com/itsakphyo/fact-checker-server",
-          icon: <Github className="h-4 w-4 mr-2" />,
+          url: "https://github.com/itsakphyo/fact-checker-server",
+          icon: <Github  className="h-4 w-4 mr-2" />,
           label: "View Code",
         },
       ],
