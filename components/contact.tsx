@@ -51,6 +51,11 @@ export default function Contact() {
                 <Linkedin className="h-5 w-5" />
               </Button>
             </Link>
+            <Link href="mailto:itsakphyo@gmail.com" target="_blank" rel="noopener noreferrer">
+              <Button variant="outline" size="icon" aria-label="Mail">
+                <Mail className="h-5 w-5" />
+              </Button>
+            </Link>
           </div>
         </motion.div>
 
