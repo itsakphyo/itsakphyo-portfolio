@@ -13,7 +13,7 @@ export default function Experience() {
       type: "Remote, Internship",
       period: "November 2024 - January 2025",
       description:
-        "Brillar primarily develops Generative AI applications, including AI agents for text, audio, video, and SQL tasks. I joined as one of three members of the internship team and later, I was welcomed for a full-time developer position. However, I had to decline the offer due to academic commitments and upcoming exams.",
+        "Brillar primarily develops Generative AI applications, including AI agents for text, audio, video, and SQL tasks. I joined as one of three members of the internship team and later, I was welcomed for a full-time developer position.  However, I chose to focus on my upcoming exams and academic responsibilities, so I decided not to continue in the role.",
       responsibilities: [
         "Developed and maintained APIs using FastAPI for scalable AI-driven platforms.",
         "Transformed Jupyter notebooks into production-grade code, ensuring optimized performance for real-world applications.",
