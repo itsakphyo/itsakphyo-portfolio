@@ -7,8 +7,8 @@ export default function Footer() {
   return (
     <footer className="bg-background border-t py-8">
       <div className="container mx-auto px-4">
-        <div className="flex items-center">
-          <div className="mb-4 md:mb-0">
+        <div className="flex items-center justify-center">
+          <div className="text-center">
             <p className="text-sm text-muted-foreground">© {currentYear} Aung Khant Phyo. All rights reserved.</p>
           </div>
         </div>
