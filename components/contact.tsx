@@ -27,23 +27,22 @@ export default function Contact() {
           viewport={{ once: true }}
           className="space-y-6"
         >
-          <h3 className="text-xl font-medium">Get In Touch</h3>
-          <p className="text-muted-foreground">
+          <p className="text-sm md:text-base text-muted-foreground">
             Feel free to reach out if you're looking for a developer, have a question, or just want to connect.
           </p>
 
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
               <MapPin className="h-5 w-5 text-primary" />
-              <span>Bangkok, Thailand</span>
+              <span className="text-sm md:text-base">Bangkok, Thailand</span>
             </div>
             <div className="flex items-center space-x-3">
               <Phone className="h-5 w-5 text-primary" />
-              <span>(+66) 62 965 2927</span>
+              <span className="text-sm md:text-base">(+66) 62 965 2927</span>
             </div>
             <div className="flex items-center space-x-3">
               <Mail className="h-5 w-5 text-primary" />
-              <span>itsakphyo@gmail.com</span>
+              <span className="text-sm md:text-base">itsakphyo@gmail.com</span>
             </div>
           </div>
 
@@ -76,13 +75,13 @@ export default function Contact() {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
+          className="hidden md:block"
         >
           <Card>
             <CardContent className="pt-6 flex flex-col items-center text-center space-y-6">
-              <h3 className="text-xl font-medium">Let's Work Together</h3>
-              <p className="text-muted-foreground">
-                I'm currently available for freelance work, consulting, and full-time positions. Feel free to reach out
-                if you have any questions or would like to collaborate!
+              <h3 className="text-lg md:text-xl font-medium">Let's Work Together</h3>
+              <p className="text-sm md:text-base text-muted-foreground">
+                I'm currently available for freelance work, consulting, and full-time positions.
               </p>
               <Link href="mailto:itsakphyo@gmail.com">
                 <Button size="lg" className="mt-4">

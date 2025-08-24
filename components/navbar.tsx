@@ -49,7 +49,7 @@ export default function Navbar() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center space-x-4">
-            <Link href="/" className="text-xl font-bold tracking-tight hover:text-primary transition-colors">
+            <Link href="/" className="text-lg md:text-xl font-bold tracking-tight hover:text-primary transition-colors">
               AKP
             </Link>
           </div>
@@ -60,7 +60,7 @@ export default function Navbar() {
               <Link
                 key={link.name}
                 href={link.href}
-                className="text-sm font-medium hover:text-primary transition-colors"
+                className="text-xs md:text-sm font-medium hover:text-primary transition-colors"
               >
                 {link.name}
               </Link>
@@ -86,7 +86,7 @@ export default function Navbar() {
               <Link
                 key={link.name}
                 href={link.href}
-                className="block py-2 text-sm font-medium hover:text-primary transition-colors"
+                className="block py-2 text-xs md:text-sm font-medium hover:text-primary transition-colors"
                 onClick={() => setIsOpen(false)}
               >
                 {link.name}

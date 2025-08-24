@@ -58,13 +58,13 @@ export default function Certifications() {
                 <div className="h-8 w-8 rounded-full bg-primary/10 flex items-center justify-center text-primary">
                   <Award className="h-4 w-4" />
                 </div>
-                <CardTitle className="text-base">{cert.title}</CardTitle>
+                <CardTitle className="text-sm md:text-base">{cert.title}</CardTitle>
               </CardHeader>
               <CardContent className="pt-0">
                 <div className="flex justify-between items-center">
                   <div>
-                    <p className="text-sm text-muted-foreground">{cert.issuer}</p>
-                    <p className="text-sm text-muted-foreground">{cert.date}</p>
+                    <p className="text-xs md:text-sm text-muted-foreground">{cert.issuer}</p>
+                    <p className="text-xs md:text-sm text-muted-foreground">{cert.date}</p>
                   </div>
                   <Link
                     href={cert.url}

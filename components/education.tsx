@@ -4,6 +4,7 @@ import { motion } from "framer-motion"
 import SectionHeading from "./section-heading"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { GraduationCap, Award } from "lucide-react"
+import Image from "next/image"
 
 export default function Education() {
   const educationData = [
@@ -12,14 +13,16 @@ export default function Education() {
       location: "London, United Kingdom",
       degree: "Bachelor of Science (Honours) in Computing",
       period: "June 2024 – April 2025",
+      honor: "First Class Honours",
       icon: <GraduationCap className="h-5 w-5" />,
+      certificate: "/images/certificate.png",
     },
     {
       institution: "University of the People",
       location: "Pasadena, California",
       degree: "Associate of Science in Computer Science",
       period: "Dec 2022 – April 2024",
-      gpa: "Cumulative GPA: 3.42",
+      honor: "Cumulative GPA: 3.42",
       icon: <GraduationCap className="h-5 w-5" />,
     },
     {
@@ -51,41 +54,39 @@ export default function Education() {
                   {edu.icon}
                 </div>
                 <div>
-                  <CardTitle className="text-xl">{edu.institution}</CardTitle>
-                  <p className="text-sm text-muted-foreground">{edu.location}</p>
+                  <CardTitle className="text-lg md:text-xl">{edu.institution}</CardTitle>
+                  <p className="text-xs md:text-sm text-muted-foreground">{edu.location}</p>
                 </div>
               </CardHeader>
               <CardContent className="space-y-2">
-                <p className="font-medium">{edu.degree}</p>
-                <p className="text-sm text-muted-foreground">{edu.period}</p>
-                {edu.gpa && <p className="text-sm">{edu.gpa}</p>}
-                {edu.note && <p className="text-sm italic">{edu.note}</p>}
+                <p className="text-sm md:text-base font-medium">{edu.degree}</p>
+                <p className="text-xs md:text-sm text-muted-foreground">{edu.period}</p>
+                {edu.honor && (
+                  <p className="text-xs md:text-sm text-green-600 dark:text-green-400 font-medium flex items-center gap-1">
+                    <Award className="h-4 w-4" />
+                    {edu.honor}
+                  </p>
+                )}
+                {edu.note && <p className="text-xs md:text-sm italic">{edu.note}</p>}
+                {edu.certificate && (
+                  <div className="mt-4 pt-4 border-t">
+                    <h4 className="text-sm font-medium mb-3 text-muted-foreground">Certificate</h4>
+                    <div className="relative w-full max-w-xs md:max-w-sm mx-auto">
+                      <Image
+                        src={edu.certificate}
+                        alt={`${edu.institution} Certificate`}
+                        width={800}
+                        height={600}
+                        className="w-full h-auto rounded-lg shadow-lg border object-contain"
+                        priority={index === 0}
+                      />
+                    </div>
+                  </div>
+                )}
               </CardContent>
             </Card>
           </motion.div>
         ))}
-
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.3 }}
-          viewport={{ once: true }}
-        >
-          <Card>
-            <CardHeader className="flex flex-row items-center gap-4">
-              <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center text-primary">
-                <Award className="h-5 w-5" />
-              </div>
-              <CardTitle>Honors List</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p>
-                University of the People: Recognized for achieving a CGPA between 3.00 and 3.49 for Term-5 of the
-                2023-2024 academic year.
-              </p>
-            </CardContent>
-          </Card>
-        </motion.div>
       </div>
     </section>
   )

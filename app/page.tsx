@@ -13,7 +13,7 @@ export default function Home() {
     <main className="min-h-screen bg-background">
       <Navbar />
       <Hero />
-      <div className="container mx-auto px-4 py-8 space-y-20">
+      <div className="container mx-auto px-6 md:px-8 py-8 space-y-2 max-w-4xl lg:max-w-6xl">
         <About />
         <Education />
         <Skills />

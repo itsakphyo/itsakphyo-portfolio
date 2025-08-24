@@ -34,7 +34,7 @@ export default function Skills() {
             viewport={{ once: true }}
             className="space-y-3"
           >
-            <h3 className="text-xl font-medium">{category.name}</h3>
+            <h3 className="text-lg md:text-xl font-medium">{category.name}</h3>
             <div className="flex flex-wrap gap-2">
               {category.skills.map((skill, skillIndex) => (
                 <motion.div
@@ -47,7 +47,7 @@ export default function Skills() {
                   }}
                   viewport={{ once: true }}
                 >
-                  <Badge variant="secondary" className="px-3 py-1 text-sm">
+                  <Badge variant="secondary" className="px-3 py-1 text-xs md:text-sm">
                     {skill}
                   </Badge>
                 </motion.div>

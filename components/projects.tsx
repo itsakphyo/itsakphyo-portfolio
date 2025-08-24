@@ -103,10 +103,10 @@ export default function Projects() {
           >
             <Card>
               <CardHeader>
-                <CardTitle className="text-xl">{project.title}</CardTitle>
+                <CardTitle className="text-lg md:text-xl">{project.title}</CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
-                <p>{project.description}</p>
+                <p className="text-sm md:text-base text-justify">{project.description}</p>
                 <div className="flex flex-wrap gap-2">
                   {project.techStack.map((tech, techIndex) => (
                     <Badge key={techIndex} variant="outline">

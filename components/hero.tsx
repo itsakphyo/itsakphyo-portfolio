@@ -27,7 +27,7 @@ export default function Hero() {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
-            className="relative h-64 w-64 rounded-full overflow-hidden border-4 border-primary/20 shadow-xl bg-background/30 backdrop-blur-sm"
+            className="relative h-40 w-40 md:h-64 md:w-64 rounded-full overflow-hidden border-4 border-primary/20 shadow-xl bg-background/30 backdrop-blur-sm"
           >
             <Image
               src="/images/profile_pic.jpg"
@@ -51,7 +51,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="text-4xl md:text-6xl font-bold tracking-tight"
+              className="text-2xl md:text-4xl lg:text-6xl font-bold tracking-tight"
             >
               Aung Khant Phyo
             </motion.h1>
@@ -60,7 +60,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.3 }}
-              className="text-xl md:text-2xl text-muted-foreground"
+              className="text-lg md:text-xl lg:text-2xl text-muted-foreground"
             >
               Software Engineer & AI Developer
             </motion.h2>
