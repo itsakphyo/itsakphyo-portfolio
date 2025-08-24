@@ -5,31 +5,13 @@ import SectionHeading from "./section-heading"
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
-import { Github, Youtube, ExternalLink   } from "lucide-react"
+import { Github, Youtube, ExternalLink  } from "lucide-react"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faTelegram } from "@fortawesome/free-brands-svg-icons"
 import Link from "next/link"
 
 export default function Projects() {
   const projects = [
-    {
-      title: "Fact Checker — Chrome Extension with AI-Powered Backend",
-      description:
-        "Built a browser extension with a FastAPI backend that allows users to fact-check selected text or images directly from any webpage. The backend leverages Google Gemini, a large language model (LLM), for real-time claim verification, web search, and OCR-based image analysis. Includes multilingual support via Google Cloud Translate and is containerized with Docker for easy deployment.",
-      techStack: ["JavaScript", "Python", "FastAPI", "Docker", "Google Gemini", "Google Cloud Translate", "Google Cloud Platform"],
-      links: [
-        {
-          type: "demo",
-          url: "https://chromewebstore.google.com/detail/fact-checker/fkljeknlglobikhccghfkjdbgoeboiip",
-          icon: <ExternalLink  className="h-4 w-4 mr-2" />,
-          label: "View Extension",
-        },
-        {
-          type: "github",
-          url: "https://github.com/itsakphyo/fact-checker-server",
-          icon: <Github  className="h-4 w-4 mr-2" />,
-          label: "View Code",
-        },
-      ],
-    },
     {
       title: 'Text Data Collection Platform (for "guided-back" translation)',
       description:
@@ -46,6 +28,46 @@ export default function Projects() {
           type: "github",
           url: "https://github.com/itsakphyo/myanlang-translation-platform",
           icon: <Github className="h-4 w-4 mr-2" />,
+          label: "View Code",
+        },
+      ],
+    },
+    {
+      title: 'Telegram Bot Backend with Webhook',
+      description:
+        "Built a production-grade Telegram bot with a FastAPI backend that implements a clean architecture design pattern with robust error handling and logging. The application features webhook integration for real-time message processing, containerized deployment with Docker, and comprehensive CI/CD support for Google Cloud Platform. Includes asynchronous request handling, rate limiting, health monitoring endpoints, and follows security best practices for sensitive configuration management.",
+      techStack: ["Python", "FastAPI", "Docker", "Google Cloud Build"],
+      links: [
+        {
+          type: "demo",
+          url: "https://t.me/itsakphyo_bot",
+          icon: <FontAwesomeIcon icon={faTelegram} className="h-4 w-4 mr-2" />,
+          label: "Try Bot",
+        },
+        {
+          type: "github",
+          url: "https://github.com/itsakphyo/itsakphyo-bot",
+          icon: <Github className="h-4 w-4 mr-2" />,
+          label: "View Code",
+        },
+      ],
+    },
+    {
+      title: "Fact Checker — Chrome Extension with AI-Powered Backend",
+      description:
+        "Built a browser extension with a FastAPI backend that allows users to fact-check selected text or images directly from any webpage. The backend leverages Google Gemini, a large language model (LLM), for real-time claim verification, web search, and OCR-based image analysis. Includes multilingual support via Google Cloud Translate and is containerized with Docker for easy deployment.",
+      techStack: ["JavaScript", "Python", "FastAPI", "Docker", "Google Gemini", "Google Cloud Translate", "Google Cloud Platform"],
+      links: [
+        {
+          type: "demo",
+          url: "https://chromewebstore.google.com/detail/fact-checker/fkljeknlglobikhccghfkjdbgoeboiip",
+          icon: <ExternalLink  className="h-4 w-4 mr-2" />,
+          label: "View Extension",
+        },
+        {
+          type: "github",
+          url: "https://github.com/itsakphyo/fact-checker-server",
+          icon: <Github  className="h-4 w-4 mr-2" />,
           label: "View Code",
         },
       ],
