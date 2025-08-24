@@ -33,7 +33,7 @@ export default function Projects() {
     {
       title: 'Text Data Collection Platform (for "guided-back" translation)',
       description:
-        "As part of my final year project, I developed a text data collection platform designed for three user roles: Admin, Freelancer, and Data Quality Assurance Member. Each role has specific features and permissions tailored to their responsibilities. Due to the ongoing academic review, the source code and full documentation remain confidential. However, a demo video is available that highlights the platform's main features and shows how each user role interacts with the system.",
+        "As part of my final year project, I developed a comprehensive translation platform with sophisticated role-based access control, featuring three distinct user types (Freelancer, QA Member, Admin) each with dedicated dashboards and permissions. Implemented a complete workflow system where Admins create translation jobs, Freelancers complete tasks, and QA Members perform quality assessment with acceptance metrics tracking. Built robust authentication with JWT, email verification, and role-specific password management flows. The platform includes an advanced appeal system allowing freelancers to challenge rejected translations with documentation upload capability. Database schema leverages SQLAlchemy ORM with efficient relationship mapping between users, tasks, and languages. Features multi-language system localization (English, Burmese, and regional dialects) to support linguistic diversity in Myanmar.",
       techStack: ["Python", "TypeScript", "FastAPI", "PostgreSQL", "React"],
       links: [
         {
@@ -41,6 +41,12 @@ export default function Projects() {
           url: "https://youtu.be/7jabVNqLNj8",
           icon: <Youtube className="h-4 w-4 mr-2" />,
           label: "Watch Demo",
+        },
+        {
+          type: "github",
+          url: "https://github.com/itsakphyo/myanlang-translation-platform",
+          icon: <Github className="h-4 w-4 mr-2" />,
+          label: "View Code",
         },
       ],
     },
