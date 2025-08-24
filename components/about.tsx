@@ -18,14 +18,16 @@ export default function About() {
           className="md:col-span-2 space-y-4"
         >
           <p className="text-lg leading-relaxed">
-            I'm Aung Khant Phyo, a Computing graduate (pending official graduation) from the University of Greenwich. I
-            started in mechatronics but shifted to computer science after discovering the power of IT during the
-            COVID-19 lockdown.
+            I’m Aung Khant Phyo, a Computing graduate from the University of Greenwich.
+            I started in mechatronics but shifted to computer science after discovering
+            the power of IT during the COVID-19 lockdown.
           </p>
           <p className="text-lg leading-relaxed">
-            Since then, I've studied data analysis, programming and machine learning. I've worked as a data analyst and
-            backend engineer. I'm especially enthusiastic about how large language models (LLMs) can contribute to
-            global solutions.
+            Since then, I've developed skills in data analysis using Python and PowerBI,
+            and have experience in machine learning with frameworks like TensorFlow and PyTorch.
+            I’ve worked as a data analyst for a social listening company and as a backend engineer
+            for a Gen AI application development company. I'm especially enthusiastic about
+            solving global challenges with information technology.
           </p>
         </motion.div>
 
