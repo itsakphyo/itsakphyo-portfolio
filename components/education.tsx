@@ -50,10 +50,10 @@ export default function Education() {
           >
             <Card>
               <CardHeader className="flex flex-row items-center gap-4">
-                <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+                <div className="h-10 w-10 min-w-10 rounded-full bg-primary/10 flex items-center justify-center text-primary flex-shrink-0">
                   {edu.icon}
                 </div>
-                <div>
+                <div className="flex-1 min-w-0">
                   <CardTitle className="text-lg md:text-xl">{edu.institution}</CardTitle>
                   <p className="text-xs md:text-sm text-muted-foreground">{edu.location}</p>
                 </div>
