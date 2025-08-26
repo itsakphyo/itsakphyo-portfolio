@@ -54,11 +54,11 @@ export default function Certifications() {
             viewport={{ once: true }}
           >
             <Card>
-              <CardHeader className="flex flex-row items-center gap-4 pb-2">
-                <div className="h-8 w-8 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+              <CardHeader className="flex flex-row items-start gap-4 pb-2">
+                <div className="h-8 w-8 rounded-full bg-primary/10 flex items-center justify-center text-primary flex-shrink-0 mt-0.5">
                   <Award className="h-4 w-4" />
                 </div>
-                <CardTitle className="text-sm md:text-base">{cert.title}</CardTitle>
+                <CardTitle className="text-sm md:text-base leading-relaxed">{cert.title}</CardTitle>
               </CardHeader>
               <CardContent className="pt-0">
                 <div className="flex justify-between items-center">

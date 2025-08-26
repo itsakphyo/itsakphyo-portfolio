@@ -102,7 +102,7 @@ export default function Projects() {
           type: "kaggle",
           url: "https://www.kaggle.com/competitions/classifying-the-brain-on-music/overview",
           icon: <ExternalLink className="h-4 w-4 mr-2" />,
-          label: "Original Competition",
+          label: "Kaggle",
         },
       ],
     },
@@ -126,7 +126,7 @@ export default function Projects() {
                 <CardTitle className="text-lg md:text-xl">{project.title}</CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
-                <p className="text-sm md:text-base text-justify">{project.description}</p>
+                <p className="text-xs md:text-base text-justify">{project.description}</p>
                 <div className="flex flex-wrap gap-2">
                   {project.techStack.map((tech, techIndex) => (
                     <Badge key={techIndex} variant="outline">
