@@ -106,6 +106,20 @@ export default function Projects() {
         },
       ],
     },
+    {
+      title: 'fMRI Brain Activity Classification for Music Genre Prediction',
+      description:
+        "Developed a comprehensive machine learning pipeline to classify fMRI brain activity data and predict music genres based on neural responses in the auditory cortex. Implemented end-to-end workflow through three structured Jupyter notebooks covering exploratory data analysis, systematic model comparison, and final model training. Processed 22,036 brain activity features from blood-oxygenation level measurements across 160 training samples spanning five music genres (Ambient, Country, Heavy Metal, Rock, Classical). Applied advanced feature engineering with SelectKBest feature selection, PCA dimensionality reduction, and statistical significance testing. Conducted comprehensive model evaluation comparing 9+ ML algorithms including Random Forest, XGBoost, LightGBM, and SVM with cross-validation and hyperparameter optimization. Built robust data preprocessing pipeline handling feature scaling, problematic feature identification, and proper CSV data loading without headers. Achieved systematic model performance tracking with metadata persistence and confidence scoring for final predictions on 40 test samples.",
+      techStack: ["Python", "Scikit-learn", "Pandas", "NumPy", "Jupyter", "XGBoost", "LightGBM"],
+      links: [
+        {
+          type: "github",
+          url: "https://github.com/itsakphyo/bet",
+          icon: <Github className="h-4 w-4 mr-2" />,
+          label: "View Code",
+        },
+      ],
+    },
   ]
 
   return (
