@@ -33,10 +33,10 @@ export default function Projects() {
       ],
     },
     {
-      title: 'Telegram Bot Backend with Webhook',
+      title: 'AI-Powered Telegram Bot with RAG Pipeline',
       description:
-        "Built a production-grade Telegram bot with a FastAPI backend that implements a clean architecture design pattern with robust error handling and logging. The application features webhook integration for real-time message processing, containerized deployment with Docker, and comprehensive CI/CD support for Google Cloud Platform. Includes asynchronous request handling, rate limiting, health monitoring endpoints, and follows security best practices for sensitive configuration management.",
-      techStack: ["Python", "FastAPI", "Docker", "Google Cloud Build"],
+        "Developed an intelligent Telegram assistant leveraging Google Cloud Vertex AI with Retrieval-Augmented Generation (RAG) for contextual responses. Built on FastAPI with clean architecture, the bot automatically syncs knowledge from Google Drive documents, processes queries through Gemini 1.5 Flash model, and delivers personalized answers. Features production-ready webhook integration, automated document corpus management, containerized Cloud Run deployment, and comprehensive monitoring with structured logging and health endpoints.",
+      techStack: ["Python", "FastAPI", "Vertex AI", "RAG", "Gemini 1.5", "Docker", "Cloud Run", "Google Drive API"],
       links: [
         {
           type: "demo",
