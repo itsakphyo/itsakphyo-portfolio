@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 import SectionHeading from "./section-heading"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { Github, Linkedin, Mail, MapPin, Phone } from "lucide-react"
+import { Github, Linkedin, Mail, MapPin, Phone, Send } from "lucide-react"
 import Link from "next/link"
 
 // Mastodon icon component since it's not available in Lucide
@@ -55,6 +55,11 @@ export default function Contact() {
             <Link href="https://www.linkedin.com/in/itsakphyo/" target="_blank" rel="noopener noreferrer">
               <Button variant="outline" size="icon" aria-label="LinkedIn">
                 <Linkedin className="h-5 w-5" />
+              </Button>
+            </Link>
+            <Link href="https://t.me/itsakphyo" target="_blank" rel="noopener noreferrer">
+              <Button variant="outline" size="icon" aria-label="Telegram">
+                <Send className="h-5 w-5" />
               </Button>
             </Link>
             <Link href="https://mastodon.social/@itsakphyo" target="_blank" rel="noopener noreferrer">
