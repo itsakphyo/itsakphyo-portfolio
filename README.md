@@ -1,6 +1,6 @@
 # Aung Khant Phyo - Portfolio
 
-A modern, responsive portfolio website showcasing my skills, experience, and projects as a Software Engineer and AI Developer.
+A modern, responsive portfolio website showcasing my skills, experience, and projects as a Software Engineer and Gen AI Developer.
 
 ## Built With
 

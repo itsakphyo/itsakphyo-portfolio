@@ -13,7 +13,7 @@ export default function Education() {
       location: "London, United Kingdom",
       degree: "Bachelor of Science (Honours) in Computing",
       period: "June 2024 – April 2025",
-      honor: "First Class Honours",
+      honor: "🎖️ First Class Honours",
       icon: <GraduationCap className="h-5 w-5" />,
       certificate: "/images/certificate.png",
     },
@@ -22,7 +22,7 @@ export default function Education() {
       location: "Pasadena, California",
       degree: "Associate of Science in Computer Science",
       period: "Dec 2022 – April 2024",
-      honor: "Cumulative GPA: 3.42",
+      honor: "🎖️ Cumulative GPA: 3.42",
       icon: <GraduationCap className="h-5 w-5" />,
     },
     {
@@ -63,7 +63,7 @@ export default function Education() {
                 <p className="text-xs md:text-sm text-muted-foreground">{edu.period}</p>
                 {edu.honor && (
                   <p className="text-xs md:text-sm text-green-600 dark:text-green-400 font-medium flex items-center gap-1">
-                    <Award className="h-4 w-4" />
+                    {/* <Award className="h-4 w-4" /> */}
                     {edu.honor}
                   </p>
                 )}
