@@ -21,10 +21,10 @@ export default function Certifications() {
       url: "https://learn.deeplearning.ai/accomplishments/3f2a62e8-38e8-4e63-979b-5ca46ce731ab",
     },
     {
-      title: "AI Deep Learning Specialization by Andrew Ng",
+      title: "Deep Learning Specialization by Andrew Ng",
       issuer: "Coursera",
       date: "April 2023",
-      url: "https://www.credly.com/badges/89e37445-d822-4eeb-b38e-f8fc22156977/linked_in_profile",
+      url: "https://www.coursera.org/account/accomplishments/specialization/AAG9BSNBZB7S",
     },
     {
       title: "Machine Learning with Python",
