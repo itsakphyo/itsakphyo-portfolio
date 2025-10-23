@@ -53,6 +53,20 @@ export default function Projects() {
       ],
     },
     {
+      title: "Let's Share – Full-Stack Clean Architecture Demo",
+      description:
+        "Demonstrated professional-grade full-stack development with a clean, enterprise-style architecture emphasizing scalability, maintainability, and testability. The project implements a layered backend using FastAPI, SQLAlchemy, and PostgreSQL, following repository and service patterns with dependency injection, async data handling, and JWT-based authentication. The frontend, built with React and TypeScript, adopts a modular architecture with Zustand state management, custom hooks, and a dedicated API service layer for clean separation of concerns.",
+      techStack: ["Python", "FastAPI", "SQLAlchemy (Async)", "PostgreSQL", "React 19", "TypeScript", "Zustand", "Axios"],
+      links: [
+        {
+          type: "github",
+          url: "https://github.com/itsakphyo/lets_share",
+          icon: <Github  className="h-4 w-4 mr-2" />,
+          label: "View Code",
+        },
+      ],
+    },
+    {
       title: "Fact Checker — Chrome Extension with AI-Powered Backend",
       description:
         "Built a browser extension with a FastAPI backend that allows users to fact-check selected text or images directly from any webpage. The backend leverages Google Gemini, a large language model (LLM), for real-time claim verification, web search, and OCR-based image analysis. Includes multilingual support via Google Cloud Translate and is containerized with Docker for easy deployment.",
