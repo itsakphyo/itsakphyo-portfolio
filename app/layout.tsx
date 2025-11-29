@@ -10,8 +10,13 @@ export const metadata: Metadata = {
   title: "Aung Khant Phyo | Software Engineer & AI Developer",
   description:
     "Portfolio of Aung Khant Phyo - Software Engineer and AI Developer specializing in Python, TypeScript, and Machine Learning",
-    generator: 'v0.dev'
+  icons: {
+    icon: '/favicon.svg',
+    shortcut: '/favicon.svg',
+    apple: '/favicon.svg',
+  }
 }
+
 
 export default function RootLayout({
   children,
