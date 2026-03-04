@@ -7,9 +7,9 @@ import { ThemeProvider } from "@/components/theme-provider"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Aung Khant Phyo | Software Engineer & AI Developer",
+  title: "Aung Khant Phyo | AI Engineer",
   description:
-    "Portfolio of Aung Khant Phyo - Software Engineer and AI Developer specializing in Python, TypeScript, and Machine Learning",
+    "Portfolio of Aung Khant Phyo - AI Engineer specializing in Python, TypeScript, and Machine Learning",
   icons: {
     icon: '/favicon.svg',
     shortcut: '/favicon.svg',

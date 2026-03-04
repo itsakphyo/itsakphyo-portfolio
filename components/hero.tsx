@@ -62,7 +62,7 @@ export default function Hero() {
               transition={{ duration: 0.5, delay: 0.3 }}
               className="text-lg md:text-xl lg:text-2xl text-muted-foreground"
             >
-              Software Engineer & Gen AI Developer
+              AI Engineer
             </motion.h2>
 
             <motion.div
